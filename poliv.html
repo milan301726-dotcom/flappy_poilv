@@ -37,6 +37,15 @@
 	var game_over = "GAMEOVER";
 	var high_score = "HIGH SCORE";
 	var try_again = "TOUCH TO TRY AGAIN";
+
+  // Load your sound files
+  var hitSound = new Audio('hit.mp3');
+  var scoreSound = new Audio('score.mp3');
+
+  // Optional: Preload sounds to avoid delay
+  hitSound.load();
+  scoreSound.load();
+
 </script>
 
 <style>
@@ -130,5 +139,6 @@ body {
 	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	
 <script src="button.js"></script>
+
 
 </html>
